@@ -1,290 +1,290 @@
-+<!Doctype html>
- +<html>
- +<head>
- +<meta charset="utf-8">    
- +<meta name="viewport" content="width=device-width, initial-scale=1.0">
- +<title>stronasmoki</title>
- +<link rel="icon" type="image/png" href="img/smok.ico">    
- +<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    
- +<link rel="stylesheet" type="text/css"
- +href="smokostrona.css">
- +<link rel="stylesheet" type="text/css"
- +href="gallery.css">    
- +<body>
- +    <div class="menuwrapper">
- +        <div class="menu">   
- +            <button class="menubutton" onclick="smoothScroll(document.getElementById('start'))">START</button>
- +            <button class="menubutton" onclick="smoothScroll(document.getElementById('spotkanie'))">SPOTKANIE</button>
- +            <button class="menubutton" onclick="smoothScroll(document.getElementById('movies'))">FILMY</button>
- +            <button class="menubutton" onclick="smoothScroll(document.getElementById('games'))">GRY</button>
- +            <button class="menubutton" onclick="smoothScroll(document.getElementById('music'))">MUZYKA</button>
- +            <button class="menubutton" onclick="smoothScroll(document.getElementById('gallery'))">GALERIA</button>
- +            <button class="menubutton" onclick="smoothScroll(document.getElementById('literature'))">LITERATURA</button>
- +            <button class="menubutton" onclick="smoothScroll(document.getElementById('autor'))">AUTOR</button>
- +        </div>    
- +    </div>
- +    
- +    <div class="jumbotron" id="start">
- +        <p id="welcome">Witaj na Smokostronie!</p>
- +        <p id="sign">Page by Błażej Kowalczyk</p> 
- +    </div>
- +    
- +    <div class="jumbotron" id="spotkanie">
- +        <div class="videowrapper">
- +            
- +            <div class="buttondiv">
- +                <button class="button" id="button" onclick="playPause();show()">By poznać Smoka<br> Kliknij</button> 
- +            </div>
- +            
- +            <video id="video1">
- +                <source src="smoczyogien.mp4" type="video/mp4">    Your browser does not support HTML5 video.   
- +            </video>           
- +        </div>
- +    </div>
- +    
- +    <div class="jumbotron" id="movies">
- +            <div class="moviewrapper">
- +                
- +                <div class="firstmovie">
- +                   <iframe src="https://www.youtube.com/embed/ksazcECRvQI" frameborder="0" allowfullscreen></iframe> 
- +                </div>
- +                
- +                <p id="movietitle">SMOKI W FILMACH</p>
- +                
- +                <div class ="secondmovie">
- +                    <iframe src="https://www.youtube.com/embed/RZMOwBE-jwM" frameborder="0" allowfullscreen>
- +                    </iframe>
- +                </div>
- +            </div>
- +    </div>
- +        
- +    <div class="jumbotron" id="games">
- +            <div class="moviewrapper">
- +                
- +                <div class="firstmovie">
- +                   <iframe src="https://www.youtube.com/embed/P_XfgFG6lOg" frameborder="0" allowfullscreen></iframe> 
- +                </div>
- +                
- +                <p id="movietitle">SMOKI W GRACH</p>
- +                
- +                <div class ="secondmovie">
- +                    <iframe src="https://www.youtube.com/embed/bbMLC8TwX5Q" frameborder="0" allowfullscreen>
- +                    </iframe>
- +                </div>
- +            </div>
- +    </div> 
- +    
- +    <div class="jumbotron" id="music">
- +        <div class="moviewrapper">
- +                
- +                <div class="musicwrapper">
- +                    
- +                    <div class="audioplustitle">
- +                        <p class="musictitle">Skyrim - Sovengarde Song</p>
- +                        <audio controls>
- +                        <source src="media/Sovengarde.ogg" type="audio/ogg">
- +                        </audio>
- +                    </div>
- +                    
- +                    <div class="audioplustitle">
- +                    <p class="musictitle">Gothic II - Dragon Island</p>
- +                    <audio controls>
- +                       <source src="media/Gothic.ogg" type="audio/ogg">
- +                    </audio>
- +                    </div>
- +                </div>
- +                
- +                <p id="movietitle">SMOCZA MUZYKA</p>
- +                
- +                <div class="musicwrapper">
- +                    
- +                    <div class="audioplustitle">
- +                        <p class="musictitle">Skyrim theme - Metal Cover</p>
- +                        <audio controls>
- +                        <source src="media/Metal.ogg" type="audio/ogg">
- +                        </audio>
- +                    </div>    
- +                     
- +                    <div class="audioplustitle">
- +                    <p class="musictitle">Lindsay Stirling - Dragon Age</p>
- +                    <audio controls>
- +                       <source src="media/Lindsay.ogg" type="audio/ogg">
- +                    </audio>
- +                    </div>
- +                        
- +                </div>
- +            </div>   
- +    </div>
- +    <div class="jumbotron" id="gallery">
- +            <div class="moviewrapper">
- +                <div id="gallerywrapper">
- +                    
- +                    <a href="img/lodowy.jpg" class="imgcontainer" id="imglodowy">
- +                    </a>
- +
- +                    <a href="img/skyrim.jpg" class="imgcontainer" id="imgskyrim" >
- +                    </a>
- +
- +                    <a href="img/fire.jpg" class="imgcontainer" id="imgfire">
- +                    </a>
- +
- +                    <a href="img/water.jpg" class="imgcontainer" id="imgwater">
- +                    </a>
- +
- +                    <a href="img/undead.jpg" class="imgcontainer" id="imgundead">
- +                    </a>
- +
- +                    <a href="img/magic.jpg" class="imgcontainer" id="imgmagic">
- +                    </a>
- +                    
- +                    <a href="img/sun.jpg" class="imgcontainer" id="imgsun">
- +                    </a>
- +
- +                    <a href="img/deathwing.jpg" class="imgcontainer" id="imgdeathwing">
- +                    </a>
- +
- +                    <a href="img/dark.jpg" class="imgcontainer" id="imgdark">
- +                    </a>
- +
- +                    <a href="img/czarny.jpg" class="imgcontainer" id="imgczarny">
- +                    </a>
- +
- +                    <a href="img/black.jpg" class="imgcontainer" id="imgblack">   
- +                    </a>
- +             
- +                </div>
- +            </div>
- +    </div>
- +    
- +    <div class="jumbotron" id="literature">
- +        <div class="moviewrapper">
- +            <div class="literaturewrapper">
- +                
- +                <p id="literatureauthor">Granica możliwości - autor Andrzej Sapkowski <br>fragment</p><br>
- +                
- +<p class="text">Złoty smok, siedzący na pagórku, ziewnął, zadarł głowę, zamachał skrzydłami, smagnął ziemię
- +ogonem.<br>
- +- Królu Niedamirze i wy, rycerze! - zaryczał rykiem brzmiącym jak mosiężna trąba. - Jestem smok
- +Villentre-tenmerth! Jak widzę, nie ze wszystkim zatrzymała was lawina, którą to ja, nie chwalący
- +się, spuściłem wam na głowy. Dotarliście aż tutaj. Jak wiecie, z doliny tej są tylko trzy wyjścia. Na 
- +wschód, ku Hołopolu, i na zachód, ku Caingorn. I z tych dróg możecie skorzystać. Północnym
- +wąwozem, panowie, nie pójdziecie, bo ja, Yillentretenmerth, zabraniam wam tego. Jeśli zaś ktoś
- +mego zakazu respektować nie zechce, wyzywam go oto na bój, na honorowy, rycerski pojedynek.
- +Na broń konwencjonalną, bez czarów, bez ziania ogniem. Walka do pełnej kapitulacji jednej ze
- +stron. Czekam odpowiedzi przez herolda waszego, jak każe zwyczaj!
- +Wszyscy stali otworzywszy szeroko usta.<br>
- +- On gada! - sapnął Boholt. - Niebywałe!<br>
- +- I do tego strasznie mądrze - rzekł Yarpen Zigrin. - Czy ktoś wie, co to jest broń konfesjonalna?<br>
- +- Zwykła, niemagiczna - powiedziała Yennefer marszcząc brwi. - Mnie jednak zastanawia coś
- +innego. Nie można mówić artykułowanie, mając rozwidlony język. Łajdak używa telepatii.
- +Uważajcie, to działa w obie strony. Może czytać wasze myśli.<br>
- +- Co on, zgłupiał ze szczętem, czy jak? - zdenerwował się Kennet Zdzieblarz. - Honorowy
- +pojedynek? Z głupim gadem? A takiego! Idziemy na niego kupą! W kupie siła!</p> 
- +
- +<p class="text">
- +-Nie.<br>
- +Obejrzeli się.<br>
- +Eyck z Denesle, już na koniu, w pełnej zbroi, z kopią osadzoną przy strzemieniu, prezentował się
- +dużo lepiej niż na piechotę. Spod podniesionej zasłony hełmu gorzały zgorączkowane oczy, bielała
- +blada twarz.<br>
- +- Nie, panie Kennet - powtórzył rycerz. - Chyba, że po moim trupie. Nie dopuszczę, by obrażano w
- +mojej obecności honor rycerski. Kto odważy się złamać zasady honorowego pojedynku...
- +Eyck mówił coraz głośniej, egzaltowany głos łamał mu się i drżał z podniecenia.<br>
- +- ...kto znieważy honor, znieważy i mnie, i krew jego lub moja popłynie na tę umęczoną ziemię.
- +Bestia żąda pojedynku? Dobrze więc! Niechaj herold otrąbi moje imię! Niech zadecyduje sąd
- +bogów! Za smokiem siła kłów i pazurów, i piekielna złość, a za mną...<br>
- +- Co za kretyn - mruknął Yarpen Zigrin.<br>
- +- ...za mną prawość, za mną wiara, za mną łzy dziewic, które ten gad...<br>
- +- Skończ, Eyck, bo rzygać się chce! - wrzasnął Boholt.<br>
- +- Dalej, w pole! Bierz się za smoka, zamiast gadać!<br>
- +- Ej, Boholt, zaczekaj - rzekł nagle krasnolud szarpiąc brodę. - Zapomniałeś o umowie? Jeśli Eyck
- +położy gadzinę, weźmie połowę...<br>
- +- Eyck nic nie weźmie - wyszczerzył zęby Boholt. - Znam go. Jemu wystarczy, jeśli Jaskier ułoży o
- +nim piosenkę.<br>
- +- Cisza! - oznajmił Gyllenstiern. - Niech tak będzie. Przeciwko smokowi wystąpi prawy rycerz
- +błędny, Eyck z Denesle, walczący w barwach Caingorn jako kopia i miecz króla Niedamira. Taka
- +jest królewska decyzja!<br>
- +- No i masz - zgrzytnął zębami Yarpen Zigrin. - Kopia i miecz Niedamira. Załatwił nas caingornski
- +królik. I co teraz?<br>
- +- Nic - Boholt splunął. - Nie chcesz chyba zadzierać z Eyckiem, Yarpen? On gada głupio, ale jeśli
- +już wlazł na konia i podniecił się, to lepiej schodzić mu z drogi. Niech idzie, zaraza, i niech załatwi
- +smoka. A potem się zobaczy.<br>
- +- Kto będzie heroldem? - spytał Jaskier. - Smok chciał herolda. Może ja?<br>
- +- Nie. To nie piosenki śpiewać, Jaskier - zmarszczył się Boholt. - Heroldem niech będzie Yarpen
- +Zigrin. Ma głos jak buhaj.<br>
- +- Dobra, co mi tam - rzekł Yarpen. - Dawajcie mi tu chorążego ze znakiem, żeby wszystko było jak
- +należy.<br>
- +- Tylko grzecznie mówcie, panie krasnoludzie. I dwornie - upomniał Gyllenstiern.<br>
- +- Nie uczcie mnie jak gadać - krasnolud dumnie wypiął brzuch. - Chodziłem w poselstwa już
- +wtedy, kiedy wy jeszczeście na chleb mówili: "bep", a na muchy: "tapty"<br>
- +Smok w dalszym ciągu spokojnie siedział na pagórku, wesoło machając ogonem. Krasnolud
- +wdrapał się na największy głaz, odchrząknął i splunął. <br>
- +- Hej, ty tam! - zaryczał, biorąc się pod boki. - Smoku chędożony! Słuchaj, co ci rzeknie herold!
- +Znaczy się ja! Jako pierwszy zabierze się do ciebie honorowo obłędny rycerz Eyck z Denesle! I
- +wrazi ci kopię w kałdun, wedle świętego zwyczaju, na pohybel tobie, a na radość biednym
- +dziewicom i królowi Niedamirowi! Walka ma być honorowa i wedle prawa, ziać ogniem nie łza, a
- +jeno konfesjonalnie łupić jeden drugiego, dopokąd ten drugi ducha nie wyzionie albo nie zemrze!
- +Czego ci życzymy z duszy, serca! Pojąłeś, smoku? </p>
- +
- +<p class="text">
- +Smok ziewnął, zamachał skrzydłami, a potem, przypadłszy do ziemi, szybko zlazł z pagóra na
- +równy teren.<br>
- +- Pojąłem, cny heroldzie! - odryczał. - Niech tedy wystąpi w pole szlachetny Eyck z Denesle. Jam
- +gotów!<br>
- +- Istne jasełki - Boholt splunął, ponurym wzrokiem odprowadzając Eycka, stępa wyjeżdżającego
- +zza bariery głazów. - Cholerna kupa śmiechu...<br>
- +- Zamknij jadaczkę, Boholt - krzyknął Jaskier zacierając ręce. - Patrz, Eyck idzie do szarży!
- +Psiakrew, ale będzie piękna ballada!<br>
- +- Hurra! Wiwat Eyck! - krzyknął ktoś z grupy łuczników Niedamira.<br>
- +- A ja - odezwał się ponuro Kozojed - ja bym go jednak dla pewności napchał siarką.<br>
- +Eyck, już w polu, odsalutował smokowi uniesioną kopią, zatrzasnął zasłonę hełmu i uderzył konia
- +ostrogami.<br>
- +- No, no - powiedział krasnolud. - Głupi to on może jest, ale na szarżowaniu faktycznie się zna.
- +Patrzcie tylko!<br>
- +Eyck, schylony, zaparty w siodle, zniżył kopię w pełnym galopie. Smok, wbrew oczekiwaniom
- +Geralta, nie odskoczył, nie ruszył półkolem, ale przypłaszczony do ziemi, popędził prosto na
- +atakującego rycerza.<br>
- +- Bij go! Bij, Eyck! - wrzasnął Yarpen.<br>
- +Eyck, choć niesiony galopem, nie uderzył na wprost, na oślep. W ostatniej chwili zmienił zwinnie
- +kierunek, przerzucił kopię nad końskim łbem. Przelatując obok smoka, z całej mocy pchnął, stając
- +w strzemionach. Wszyscy wrzasnęli jednym głosem. Geralt nie przyłączył się do chóru.<br>
- +Smok uniknął pchnięcia w delikatnym, zwinnym, pełnym gracji obrocie i zwijając się jak żywa,
- +złota wstęga, błyskawicznie, ale miękko, iście po kociemu, sięgnął łapą pod brzuch konia. Koń
- +kwiknął, wysoko wyrzucając zad, rycerz zakolebał się w siodle, ale nie wypuścił kopii. W
- +momencie, gdy koń prawie zarywał się chrapami w ziemię, smok ostrym pociągnięciem łapy
- +zmiótł Eycka z siodła. Wszyscy widzieli lecące w górę, wirujące blachy pancerza, wszyscy
- +usłyszeli brzęk i huk, z jakim rycerz zwalił się na ziemię.<br>
- +Smok przysiadając przygniótł konia łapą, zniżył zębatą paszczę. Koń kwiknął przeraźliwie,
- +zaszamotał się i ścichł.<br>
- +W ciszy, jaka zapadła, wszyscy usłyszeli głęboki głos smoka Villentretenmertha.<br>
- +- Mężnego Eycka z Denesle można zabrać z pola, jest niezdolny do dalszej walki. Następny,
- +proszę.<br>
- +- O, kurwa - powiedział Yarpen Zigrin w ciszy, jaka zapadła. </p>    
- +            </div>
- +        </div>    
- +    </div>    
- +
- +    <div class="jumbotron" id="autor">
- +            <div class="moviewrapper">
- +                <div class="autorwrapper">
- +                
- +                <div class="autor">
- +	                   <img id="autorimg" src="img/Ja.jpg">
- +                    
- +	                   <p class="Jatekst"> Cześć! Nazywam się Błażej i napisałem tę stronę jako praktykę programowania HTML, CSS i JavaScript. Stronę wykonałem z zastosowaniem RWD.    
- +                       Ulepszam stronę na bieżąco dodając co bardziej interaktywne elementy, to świetny sposób na naukę,
- +                       który gorąco polecam. Spodobała Ci się strona i masz pomysł co mógłbym dodać/ulepszyć? Napisz do mnie na fb: <a href="https://www.facebook.com/profile.php?id=100010806798564">https://www.facebook.com/profile.php?id=100010806798564</a></p>
- +                </div>   
- +                </div>
- +            </div>     
- +    </div>
- +    
- +    <div class="footer">
- +        <div></div>
- +    </div>
- +    
- +    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
- +    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
- +    <script type="text/javascript" src="smokostrona.js"></script>
- +</body>    
- +</html> 
+<!Doctype html>
+ <html>
+ <head>
+ <meta charset="utf-8">    
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>stronasmoki</title>
+ <link rel="icon" type="image/png" href="img/smok.ico">    
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    
+ <link rel="stylesheet" type="text/css"
+ href="smokostrona.css">
+ <link rel="stylesheet" type="text/css"
+ href="gallery.css">    
+ <body>
+     <div class="menuwrapper">
+         <div class="menu">   
+             <button class="menubutton" onclick="smoothScroll(document.getElementById('start'))">START</button>
+             <button class="menubutton" onclick="smoothScroll(document.getElementById('spotkanie'))">SPOTKANIE</button>
+             <button class="menubutton" onclick="smoothScroll(document.getElementById('movies'))">FILMY</button>
+            <button class="menubutton" onclick="smoothScroll(document.getElementById('games'))">GRY</button>
+            <button class="menubutton" onclick="smoothScroll(document.getElementById('music'))">MUZYKA</button>
+             <button class="menubutton" onclick="smoothScroll(document.getElementById('gallery'))">GALERIA</button>
+            <button class="menubutton" onclick="smoothScroll(document.getElementById('literature'))">LITERATURA</button>
+            <button class="menubutton" onclick="smoothScroll(document.getElementById('autor'))">AUTOR</button>
+         </div>    
+     </div>
+     
+     <div class="jumbotron" id="start">
+         <p id="welcome">Witaj na Smokostronie!</p>
+         <p id="sign">Page by Błażej Kowalczyk</p> 
+     </div>
+     
+     <div class="jumbotron" id="spotkanie">
+         <div class="videowrapper">
+             
+             <div class="buttondiv">
+                 <button class="button" id="button" onclick="playPause();show()">By poznać Smoka<br> Kliknij</button> 
+             </div>
+             
+             <video id="video1">
+                 <source src="smoczyogien.mp4" type="video/mp4">    Your browser does not support HTML5 video.   
+             </video>           
+         </div>
+     </div>
+     
+     <div class="jumbotron" id="movies">
+             <div class="moviewrapper">
+                 
+                 <div class="firstmovie">
+                    <iframe src="https://www.youtube.com/embed/ksazcECRvQI" frameborder="0" allowfullscreen></iframe> 
+                 </div>
+                 
+                 <p id="movietitle">SMOKI W FILMACH</p>
+                 
+                 <div class ="secondmovie">
+                     <iframe src="https://www.youtube.com/embed/RZMOwBE-jwM" frameborder="0" allowfullscreen>
+                     </iframe>
+                 </div>
+             </div>
+    </div>
+        
+     <div class="jumbotron" id="games">
+             <div class="moviewrapper">
+                 
+                 <div class="firstmovie">
+                    <iframe src="https://www.youtube.com/embed/P_XfgFG6lOg" frameborder="0" allowfullscreen></iframe> 
+                 </div>
+                 
+                 <p id="movietitle">SMOKI W GRACH</p>
+                 
+                 <div class ="secondmovie">
+                     <iframe src="https://www.youtube.com/embed/bbMLC8TwX5Q" frameborder="0" allowfullscreen>
+                     </iframe>
+                 </div>
+             </div>
+     </div> 
+     
+     <div class="jumbotron" id="music">
+         <div class="moviewrapper">
+                 
+                 <div class="musicwrapper">
+                     
+                     <div class="audioplustitle">
+                        <p class="musictitle">Skyrim - Sovengarde Song</p>
+                        <audio controls>
+                         <source src="media/Sovengarde.ogg" type="audio/ogg">
+                         </audio>
+                     </div>
+                     
+                     <div class="audioplustitle">
+                     <p class="musictitle">Gothic II - Dragon Island</p>
+                     <audio controls>
+                        <source src="media/Gothic.ogg" type="audio/ogg">
+                     </audio>
+                     </div>
+                 </div>
+                 
+                 <p id="movietitle">SMOCZA MUZYKA</p>
+                
+                 <div class="musicwrapper">
+                   
+                     <div class="audioplustitle">
+                         <p class="musictitle">Skyrim theme - Metal Cover</p>
+                         <audio controls>
+                         <source src="media/Metal.ogg" type="audio/ogg">
+                         </audio>
+                     </div>    
+                      
+                     <div class="audioplustitle">
+                     <p class="musictitle">Lindsay Stirling - Dragon Age</p>
+                     <audio controls>
+                        <source src="media/Lindsay.ogg" type="audio/ogg">
+                     </audio>
+                     </div>
+                         
+                 </div>
+             </div>   
+     </div>
+     <div class="jumbotron" id="gallery">
+             <div class="moviewrapper">
+                 <div id="gallerywrapper">
+                     
+                     <a href="img/lodowy.jpg" class="imgcontainer" id="imglodowy">
+                    </a>
+ 
+                     <a href="img/skyrim.jpg" class="imgcontainer" id="imgskyrim" >
+                     </a>
+ 
+                     <a href="img/fire.jpg" class="imgcontainer" id="imgfire">
+                     </a>
+ 
+                    <a href="img/water.jpg" class="imgcontainer" id="imgwater">
+                     </a>
+ 
+                     <a href="img/undead.jpg" class="imgcontainer" id="imgundead">
+                     </a>
+ 
+                     <a href="img/magic.jpg" class="imgcontainer" id="imgmagic">
+                     </a>
+                     
+                     <a href="img/sun.jpg" class="imgcontainer" id="imgsun">
+                     </a>
+ 
+                     <a href="img/deathwing.jpg" class="imgcontainer" id="imgdeathwing">
+                     </a>
+ 
+                     <a href="img/dark.jpg" class="imgcontainer" id="imgdark">
+                     </a>
+ 
+                     <a href="img/czarny.jpg" class="imgcontainer" id="imgczarny">
+                     </a>
+ 
+                     <a href="img/black.jpg" class="imgcontainer" id="imgblack">   
+                     </a>
+              
+                 </div>
+             </div>
+     </div>
+     
+     <div class="jumbotron" id="literature">
+         <div class="moviewrapper">
+             <div class="literaturewrapper">
+                 
+                 <p id="literatureauthor">Granica możliwości - autor Andrzej Sapkowski <br>fragment</p><br>
+                 
+ <p class="text">Złoty smok, siedzący na pagórku, ziewnął, zadarł głowę, zamachał skrzydłami, smagnął ziemię
+ ogonem.<br>
+ - Królu Niedamirze i wy, rycerze! - zaryczał rykiem brzmiącym jak mosiężna trąba. - Jestem smok
+ Villentre-tenmerth! Jak widzę, nie ze wszystkim zatrzymała was lawina, którą to ja, nie chwalący
+ się, spuściłem wam na głowy. Dotarliście aż tutaj. Jak wiecie, z doliny tej są tylko trzy wyjścia. Na 
+ wschód, ku Hołopolu, i na zachód, ku Caingorn. I z tych dróg możecie skorzystać. Północnym
+ wąwozem, panowie, nie pójdziecie, bo ja, Yillentretenmerth, zabraniam wam tego. Jeśli zaś ktoś
+ mego zakazu respektować nie zechce, wyzywam go oto na bój, na honorowy, rycerski pojedynek.
+ Na broń konwencjonalną, bez czarów, bez ziania ogniem. Walka do pełnej kapitulacji jednej ze
+ stron. Czekam odpowiedzi przez herolda waszego, jak każe zwyczaj!
+ Wszyscy stali otworzywszy szeroko usta.<br>
+ - On gada! - sapnął Boholt. - Niebywałe!<br>
+ - I do tego strasznie mądrze - rzekł Yarpen Zigrin. - Czy ktoś wie, co to jest broń konfesjonalna?<br>
+ - Zwykła, niemagiczna - powiedziała Yennefer marszcząc brwi. - Mnie jednak zastanawia coś
+ innego. Nie można mówić artykułowanie, mając rozwidlony język. Łajdak używa telepatii.
+ Uważajcie, to działa w obie strony. Może czytać wasze myśli.<br>
+ - Co on, zgłupiał ze szczętem, czy jak? - zdenerwował się Kennet Zdzieblarz. - Honorowy
+ pojedynek? Z głupim gadem? A takiego! Idziemy na niego kupą! W kupie siła!</p> 
+ 
+ <p class="text">
+ -Nie.<br>
+ Obejrzeli się.<br>
+ Eyck z Denesle, już na koniu, w pełnej zbroi, z kopią osadzoną przy strzemieniu, prezentował się
+ dużo lepiej niż na piechotę. Spod podniesionej zasłony hełmu gorzały zgorączkowane oczy, bielała
+ blada twarz.<br>
+ - Nie, panie Kennet - powtórzył rycerz. - Chyba, że po moim trupie. Nie dopuszczę, by obrażano w
+ mojej obecności honor rycerski. Kto odważy się złamać zasady honorowego pojedynku...
+ Eyck mówił coraz głośniej, egzaltowany głos łamał mu się i drżał z podniecenia.<br>
+ - ...kto znieważy honor, znieważy i mnie, i krew jego lub moja popłynie na tę umęczoną ziemię.
+ Bestia żąda pojedynku? Dobrze więc! Niechaj herold otrąbi moje imię! Niech zadecyduje sąd
+ bogów! Za smokiem siła kłów i pazurów, i piekielna złość, a za mną...<br>
+ - Co za kretyn - mruknął Yarpen Zigrin.<br>
+ - ...za mną prawość, za mną wiara, za mną łzy dziewic, które ten gad...<br>
+ - Skończ, Eyck, bo rzygać się chce! - wrzasnął Boholt.<br>
+ - Dalej, w pole! Bierz się za smoka, zamiast gadać!<br>
+ - Ej, Boholt, zaczekaj - rzekł nagle krasnolud szarpiąc brodę. - Zapomniałeś o umowie? Jeśli Eyck
+ położy gadzinę, weźmie połowę...<br>
+ - Eyck nic nie weźmie - wyszczerzył zęby Boholt. - Znam go. Jemu wystarczy, jeśli Jaskier ułoży o
+ nim piosenkę.<br>
+ - Cisza! - oznajmił Gyllenstiern. - Niech tak będzie. Przeciwko smokowi wystąpi prawy rycerz
+ błędny, Eyck z Denesle, walczący w barwach Caingorn jako kopia i miecz króla Niedamira. Taka
+ jest królewska decyzja!<br>
+ - No i masz - zgrzytnął zębami Yarpen Zigrin. - Kopia i miecz Niedamira. Załatwił nas caingornski
+ królik. I co teraz?<br>
+ - Nic - Boholt splunął. - Nie chcesz chyba zadzierać z Eyckiem, Yarpen? On gada głupio, ale jeśli
+ już wlazł na konia i podniecił się, to lepiej schodzić mu z drogi. Niech idzie, zaraza, i niech załatwi
+ smoka. A potem się zobaczy.<br>
+ - Kto będzie heroldem? - spytał Jaskier. - Smok chciał herolda. Może ja?<br>
+ - Nie. To nie piosenki śpiewać, Jaskier - zmarszczył się Boholt. - Heroldem niech będzie Yarpen
+ Zigrin. Ma głos jak buhaj.<br>
+ - Dobra, co mi tam - rzekł Yarpen. - Dawajcie mi tu chorążego ze znakiem, żeby wszystko było jak
+ należy.<br>
+ - Tylko grzecznie mówcie, panie krasnoludzie. I dwornie - upomniał Gyllenstiern.<br>
+ - Nie uczcie mnie jak gadać - krasnolud dumnie wypiął brzuch. - Chodziłem w poselstwa już
+ wtedy, kiedy wy jeszczeście na chleb mówili: "bep", a na muchy: "tapty"<br>
+ Smok w dalszym ciągu spokojnie siedział na pagórku, wesoło machając ogonem. Krasnolud
+ wdrapał się na największy głaz, odchrząknął i splunął. <br>
+ - Hej, ty tam! - zaryczał, biorąc się pod boki. - Smoku chędożony! Słuchaj, co ci rzeknie herold!
+ Znaczy się ja! Jako pierwszy zabierze się do ciebie honorowo obłędny rycerz Eyck z Denesle! I
+ wrazi ci kopię w kałdun, wedle świętego zwyczaju, na pohybel tobie, a na radość biednym
+ dziewicom i królowi Niedamirowi! Walka ma być honorowa i wedle prawa, ziać ogniem nie łza, a
+ jeno konfesjonalnie łupić jeden drugiego, dopokąd ten drugi ducha nie wyzionie albo nie zemrze!
+ Czego ci życzymy z duszy, serca! Pojąłeś, smoku? </p>
+ 
+ <p class="text">
+ Smok ziewnął, zamachał skrzydłami, a potem, przypadłszy do ziemi, szybko zlazł z pagóra na
+ równy teren.<br>
+ - Pojąłem, cny heroldzie! - odryczał. - Niech tedy wystąpi w pole szlachetny Eyck z Denesle. Jam
+ gotów!<br>
+ - Istne jasełki - Boholt splunął, ponurym wzrokiem odprowadzając Eycka, stępa wyjeżdżającego
+ zza bariery głazów. - Cholerna kupa śmiechu...<br>
+ - Zamknij jadaczkę, Boholt - krzyknął Jaskier zacierając ręce. - Patrz, Eyck idzie do szarży!
+ Psiakrew, ale będzie piękna ballada!<br>
+ - Hurra! Wiwat Eyck! - krzyknął ktoś z grupy łuczników Niedamira.<br>
+ - A ja - odezwał się ponuro Kozojed - ja bym go jednak dla pewności napchał siarką.<br>
+ Eyck, już w polu, odsalutował smokowi uniesioną kopią, zatrzasnął zasłonę hełmu i uderzył konia
+ ostrogami.<br>
+ - No, no - powiedział krasnolud. - Głupi to on może jest, ale na szarżowaniu faktycznie się zna.
+ Patrzcie tylko!<br>
+ Eyck, schylony, zaparty w siodle, zniżył kopię w pełnym galopie. Smok, wbrew oczekiwaniom
+ Geralta, nie odskoczył, nie ruszył półkolem, ale przypłaszczony do ziemi, popędził prosto na
+ atakującego rycerza.<br>
+ - Bij go! Bij, Eyck! - wrzasnął Yarpen.<br>
+ Eyck, choć niesiony galopem, nie uderzył na wprost, na oślep. W ostatniej chwili zmienił zwinnie
+ kierunek, przerzucił kopię nad końskim łbem. Przelatując obok smoka, z całej mocy pchnął, stając
+ w strzemionach. Wszyscy wrzasnęli jednym głosem. Geralt nie przyłączył się do chóru.<br>
+ Smok uniknął pchnięcia w delikatnym, zwinnym, pełnym gracji obrocie i zwijając się jak żywa,
+ złota wstęga, błyskawicznie, ale miękko, iście po kociemu, sięgnął łapą pod brzuch konia. Koń
+ kwiknął, wysoko wyrzucając zad, rycerz zakolebał się w siodle, ale nie wypuścił kopii. W
+ momencie, gdy koń prawie zarywał się chrapami w ziemię, smok ostrym pociągnięciem łapy
+ zmiótł Eycka z siodła. Wszyscy widzieli lecące w górę, wirujące blachy pancerza, wszyscy
+ usłyszeli brzęk i huk, z jakim rycerz zwalił się na ziemię.<br>
+ Smok przysiadając przygniótł konia łapą, zniżył zębatą paszczę. Koń kwiknął przeraźliwie,
+ zaszamotał się i ścichł.<br>
+ W ciszy, jaka zapadła, wszyscy usłyszeli głęboki głos smoka Villentretenmertha.<br>
+ - Mężnego Eycka z Denesle można zabrać z pola, jest niezdolny do dalszej walki. Następny,
+ proszę.<br>
+ - O, kurwa - powiedział Yarpen Zigrin w ciszy, jaka zapadła. </p>    
+             </div>
+         </div>    
+     </div>    
+ 
+     <div class="jumbotron" id="autor">
+             <div class="moviewrapper">
+                 <div class="autorwrapper">
+                 
+                 <div class="autor">
+ 	                   <img id="autorimg" src="img/Ja.jpg">
+                     
+ 	                   <p class="Jatekst"> Cześć! Nazywam się Błażej i napisałem tę stronę jako praktykę programowania HTML, CSS i JavaScript. Stronę wykonałem z zastosowaniem RWD.    
+                        Ulepszam stronę na bieżąco dodając co bardziej interaktywne elementy, to świetny sposób na naukę,
+                        który gorąco polecam. Spodobała Ci się strona i masz pomysł co mógłbym dodać/ulepszyć? Napisz do mnie na fb: <a href="https://www.facebook.com/profile.php?id=100010806798564">https://www.facebook.com/profile.php?id=100010806798564</a></p>
+                 </div>   
+                 </div>
+             </div>     
+     </div>
+     
+     <div class="footer">
+         <div></div>
+     </div>
+     
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <script type="text/javascript" src="smokostrona.js"></script>
+ </body>    
+ </html> 
